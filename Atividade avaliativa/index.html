@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+
+    <h2>Cadastro de Alunos</h2>
+
+    <form id="formCadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required><br><br>
+        
+        <label for="rgm">RGM:</label>
+        <input type="text" id="rgm" required><br><br>
+        
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" required><br><br>
+        
+        <label for="notas">Notas (separadas por vírgula):</label>
+        <input type="text" id="notas" required><br><br>
+        
+        <button type="submit">Cadastrar Aluno</button>
+    </form>
+
+    <h3>Lista de Alunos</h3>
+    <table id="tabelaAlunos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RGM</th>
+                <th>Curso</th>
+                <th>Média</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="index.js"></script> 
+</body>
+</html>
